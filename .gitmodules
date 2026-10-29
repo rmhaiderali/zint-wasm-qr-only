@@ -1,3 +1,4 @@
 [submodule "zint"]
 	path = zint
-	url = https://github.com/zint/zint.git
+	url = https://github.com/rmhaiderali/zint
+	branch = qr-no-multibyte-support
