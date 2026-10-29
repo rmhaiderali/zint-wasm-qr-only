@@ -1,1 +1,77 @@
 #include "zint.h"
+
+/* Stubs for removed symbologies. wasm signature is (i32, i32, i32) -> i32
+   for all of them, so one generic definition works. */
+
+#define STUB(n)                           \
+    int zint_##n(void *a, void *b, int c) \
+    {                                     \
+        (void)a;                          \
+        (void)b;                          \
+        (void)c;                          \
+        return ZINT_ERROR_INVALID_OPTION; \
+    }
+
+STUB(code128)
+STUB(code39)
+STUB(datamatrix)
+STUB(pdf417)
+STUB(micropdf417)
+STUB(aztec)
+STUB(codablockf)
+STUB(code11)
+STUB(c25standard)
+STUB(c25inter)
+STUB(c25iata)
+STUB(c25logic)
+STUB(c25ind)
+STUB(excode39)
+STUB(eanx)
+STUB(gs1_128)
+STUB(codabar)
+STUB(dpleit)
+STUB(dpident)
+STUB(code16k)
+STUB(code49)
+STUB(code93)
+STUB(flat)
+STUB(dbar_omn)
+STUB(dbar_ltd)
+STUB(dbar_exp)
+STUB(telepen)
+STUB(postnet)
+STUB(msi_plessey)
+STUB(fim)
+STUB(pharma)
+STUB(pzn)
+STUB(pharma_two)
+STUB(auspost)
+STUB(rm4scc)
+STUB(ean14)
+STUB(vin)
+STUB(nve18)
+STUB(japanpost)
+STUB(koreapost)
+STUB(planet)
+STUB(usps_imail)
+STUB(plessey)
+STUB(telepen_num)
+STUB(itf14)
+STUB(kix)
+STUB(daft)
+STUB(dpd)
+STUB(mailmark_2d)
+STUB(upu_s10)
+STUB(mailmark_4s)
+STUB(azrune)
+STUB(code32)
+STUB(composite)
+STUB(channel)
+STUB(bc412)
+STUB(dxfilmedge)
+STUB(maxicode)
+STUB(dotcode)
+STUB(hanxin)
+STUB(codeone)
+STUB(gridmatrix)
+STUB(ultra)
